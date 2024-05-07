@@ -1,0 +1,102 @@
+body {
+    font-family: 'WorkSans';
+    color: #301534;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+.principal, .attribution, body {
+    background-color: #F8EEFF;
+}
+
+.title, .subtitle {
+    display: flex;
+    gap: 1em;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    justify-content: space-between;
+}
+
+.description {
+    font-weight: normal;
+    font-size: 14px;
+    color: #8B6990 !important;
+    margin-top: 0;
+}
+
+.card {
+    z-index: 1;
+    position: relative;
+    top: -120px;
+    background: white;
+    margin: 0 24px;
+    border-radius: 8px;
+    padding: 0 24px 1em 24px;
+}
+
+.img-principal {
+    width: 100%;
+}
+
+.icon-plus {
+    display: block;
+}
+
+.icon-minus {
+    display: none;
+}
+
+.line {
+    border: 1px solid #F8EEFF;
+}
+
+@media screen and (min-width: 769px) {
+    .card {
+        width: 600px;
+        margin: 0 auto;
+        padding: 2em 24px 1em 24px;
+        top: -150px;
+    }
+
+    h1 {
+        font-size: 56px;
+        margin: 0;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+@font-face {
+    font-family: 'WorkSans';
+    src: url('assets/fonts/static/WorkSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'WorkSans';
+    src: url('assets/fonts/static/WorkSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'WorkSans';
+    src: url('assets/fonts/static/WorkSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
